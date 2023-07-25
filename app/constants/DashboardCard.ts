@@ -1,0 +1,39 @@
+import {BsArrowUpShort,BsArrowDownShort} from 'react-icons/bs'
+export const HomeCardData=[
+{
+    plan:'Gold',
+    boughtCount:'364',
+    profitMade:20323,
+    investmentMade:93858744,
+    color:'text-yellow-400',
+    percentage:18,
+    direction:BsArrowUpShort
+},
+{
+    plan:'Silver',
+    boughtCount:'324',
+    profitMade:23552,
+    investmentMade:956858,
+    color:'text-slate-400',
+    percentage:33,
+    direction:BsArrowUpShort
+},
+{
+    plan:'Bronze',
+    boughtCount:'64',
+    profitMade:204653,
+    investmentMade:9878587,
+    color:'text-orange-900',
+    percentage:10,
+    direction:BsArrowUpShort
+},
+{
+    plan:'Ruby',
+    boughtCount:'300',
+    profitMade:20002,
+    investmentMade:911158,
+    color:'text-amber-600',
+    percentage:20,
+    direction:BsArrowDownShort
+},
+]

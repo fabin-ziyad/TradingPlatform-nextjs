@@ -1,0 +1,47 @@
+/* MenuBar.module.css */
+.menuContainer {
+    position: relative;
+  }
+  
+  .menuButton {
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 0;
+    left: -250px; /* Initially hide the menu outside the viewport */
+    width: 250px;
+    height: 100vh;
+    background-color: #444;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0; /* Show the menu when it's open */
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu ul li a:hover {
+    color: #fbb03b;
+  }
+  
