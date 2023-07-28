@@ -1,12 +1,17 @@
 "use client"
 import React from 'react'
 import DashboardLayout from './Layout'
-import DashboardPageComponents from '../page-components/dashboard'
-const Dashboard = ({children}: {children: React.ReactNode}) => {
+import HomeHero from '../components/dashboard/Hero'
+import { HomeCardData } from '../constants/DashboardCard'
+import Card from '../reusables/Card'
+const Dashboard = () => {
   return (
     <div>
        <DashboardLayout>
-        <DashboardPageComponents/>
+       <HomeHero/>
+      <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 items-center gap-2 my-5 py-3 px-3'>
+        {HomeCardData.map((cardData)=>(<Card {...cardData} key={cardData.plan}/>))}
+      </div>
        </DashboardLayout>
     </div>
   )

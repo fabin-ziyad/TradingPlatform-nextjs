@@ -1,16 +1,15 @@
 import React from 'react'
 import DashboardLayout from '../dashboard/Layout'
-import DashboardPageComponents from '../page-components/dashboard'
-import ProfilePageComponents from '../page-components/profile'
+import ProfileForm from '../components/profile/ProfileForm'
 
-const Dashboard = ({children}: {children: React.ReactNode}) => {
-  return (
-    <div>
-       <DashboardLayout>
-        <ProfilePageComponents/>
-       </DashboardLayout>
-    </div>
-  )
+const Dashboard = () => {
+    return (
+        <div>
+            <DashboardLayout>
+                <ProfileForm/>
+            </DashboardLayout>
+        </div>
+    )
 }
 
 export default Dashboard

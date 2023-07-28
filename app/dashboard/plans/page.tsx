@@ -1,14 +1,14 @@
 import DashboardLayout from "../Layout"
-import PlanPageComponents from "../../page-components/plans"
+import PlanCards from "@/app/components/plans/PlanCards"
 
-const Dashboard = ({children}: {children: React.ReactNode}) => {
+const Plans = () => {
     return (
-      <div>
-         <DashboardLayout>
-          <PlanPageComponents/>
-         </DashboardLayout>
-      </div>
+        <div>
+            <DashboardLayout>
+                <PlanCards/>
+            </DashboardLayout>
+        </div>
     )
-  }
-  
-  export default Dashboard
+}
+
+export default Plans

@@ -1,6 +1,7 @@
 import React from 'react'
-import {AiFillCloseCircle} from 'react-icons/ai'
 import {useRouter} from 'next/navigation'
+import Link from 'next/link'
+import Image from 'next/image'
 const SettingsModal = ({isOpen, onClose} : any) => {
     const router = useRouter()
     const menuOptions = [
@@ -24,10 +25,11 @@ const SettingsModal = ({isOpen, onClose} : any) => {
             <div className="fixed inset-0 bg-black opacity-50 "
                 onClick={onClose}></div>
             <div className="absolute top-[10%] bg-white p-6 rounded-lg shadow-lg z-10 w-[90%] ">
-                <div className="flex items-center mb-4">
-                    <img src="./avatar.jpg" alt="User Avatar" className="w-12 h-12 rounded-full mr-4"/>
+                <Link href={'/profile'}><div className="flex items-center mb-4">
+                    <Image src="/avatar.jpg" width={80} height={80} alt="User Avatar" className="rounded-full mr-4"/>
                     <span className="text-xl text-gray-400 font-bold">User Name</span>
                 </div>
+                </Link>
                 <ul className="mb-4 text-gray-400 ">
                     {
                     menuOptions.map((option) => (

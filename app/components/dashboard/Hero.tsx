@@ -16,7 +16,8 @@ const HomeHero = () => {
                         width: "100%",
                         height: "auto"
                     }
-                }/>
+                    
+                } loading="eager" priority={true}/>
             <div className='absolute top-2 left-0 w-full h-full flex items-center justify-center'>
                 <h3 className='text-2xl text-gray-300 font-bold'>Lets Earn Together</h3>
             </div>
