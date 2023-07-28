@@ -12,9 +12,9 @@ interface SelectInputProps {
 const SelectInput: React.FC<SelectInputProps> = ({ label, options, value, onChange }) => {
   return (
     <div className="mb-4">
-      <label className="block text-gray-700 text-sm font-bold mb-1">{label}</label>
+      <label className="block text-blue-900 text-sm font-bold mb-1">{label}</label>
       <select
-        className="w-full text-gray-600 px-4 py-2 border border-gray-300 rounded-md  focus:outline-none focus:border-blue-500"
+        className="w-full mt-2 text-blue-900 px-4 py-2 border border-gray-300 rounded-md  focus:outline-none focus:border-blue-500"
         value={value}
         onChange={onChange}
       >
