@@ -1,7 +1,7 @@
 import React from 'react'
 import {GiPayMoney, GiReceiveMoney} from 'react-icons/gi'
 import {BiSolidBadgeDollar} from 'react-icons/bi'
-import {formatAmount} from '../utils/amountFormater';
+import { FormatAmount } from '../utils/Format';
 import { IconType } from 'react-icons';
 interface CardProps {
     plan: string;
@@ -41,14 +41,14 @@ const Card: React.FC < CardProps > = (props) => {
                         <span className='ml-3'>:</span>
                     </div>
                     {
-                    formatAmount(props.investmentMade)
+                    FormatAmount(props.investmentMade)
                 }</div>
                 <div className=" flex  items-center justify-around  font-bold text-blue-700 text-base">
                     <div className='flex items-center'>Profits Made
                         <span className='ml-3'>:</span>
                     </div>
                     {
-                    formatAmount(props.profitMade)
+                    FormatAmount(props.profitMade)
                 }</div>
                 
             </div>

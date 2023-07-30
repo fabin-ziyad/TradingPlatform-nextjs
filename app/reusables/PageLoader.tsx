@@ -1,6 +1,4 @@
 import React from 'react';
-import DashboardLayout from '../dashboard/Layout';
-
 const PageLoader = () => {
     return (
         <>
@@ -36,13 +34,11 @@ const PageLoader = () => {
       }
     } 
     `}</style>
-    <DashboardLayout>
 
             <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-75 bg-white">
 
                 <span className="loader"></span>
             </div>
-    </DashboardLayout>
         </>
 
     );
